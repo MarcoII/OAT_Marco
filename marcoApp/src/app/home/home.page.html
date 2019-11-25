@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color= "primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img src="https://media.yubico.com/media/catalog/product//s/e/security-key-nfc-on-keyring-720x720.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Bem-vindo ao App</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p> Chaveiro Boa Ventura</p>
+      <ion-spinner *ngIf="!articles" name="dots"></ion-spinner>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

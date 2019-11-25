@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color= "primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Formulário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <form (ngSubmit)="formSubmit()">
+      <ion-item>
+        <ion-label>Nome:</ion-label>
+        <ion-input type="text" [(ngModel)]="formData.nome" name="name" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Idade:</ion-label>
+        <ion-textarea [(ngModel)]="formData.idade" name="idade" required></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Bairro:</ion-label>
+        <ion-textarea [(ngModel)]="formData.bairro" name="bairro" required></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cidade: </ion-label>
+        <ion-textarea [(ngModel)]="formData.cidade" name="cidade" required ></ion-textarea>
+      </ion-item>
+      <ion-button type="submit" expand="block">Enviar</ion-button>
+    </form>
+
+</ion-content>
